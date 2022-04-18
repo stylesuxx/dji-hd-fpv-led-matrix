@@ -7,6 +7,7 @@ Use `adb` to copy everything in place and make it executable on the goggles:
 
 ```
 adb push draw.sh /blackbox
+adb push draw_string.sh /blackbox
 adb push example.sh /blackbox
 adb shell
 chmod a+x /blackbox/draw.sh
