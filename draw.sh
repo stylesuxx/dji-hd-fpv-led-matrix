@@ -13,7 +13,7 @@ show_usage() {
 	echo "Usage: $0 SYMBOL"
 	echo "\nDraw a symbol on the LED matrix\n"
 	echo "positional arguments:"
-	echo "  SYMBOL  0-19, A, B, C, D, E, F, H, I, J, K, L, O, P, R, S, T, U, Z, CLEAR"
+	echo "  SYMBOL  0-19, A, B, C, D, E, F, H, I, J, K, L, O, P, R, S, U, Z, CLEAR"
 	exit
 }
 
@@ -322,7 +322,7 @@ then
 	exit
 fi
 
-if [ $(echo $SYMBOL | grep -E "[0-9ABCDEFHIJKLOPRSTUZ]") ]
+if [ $(echo $SYMBOL | grep -E "[0-9ABCDEFHIJKLOPRSUZ]") ]
 then
 	FUNC="draw_$SYMBOL"
 	clear
