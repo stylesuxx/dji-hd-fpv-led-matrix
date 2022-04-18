@@ -3,11 +3,14 @@
 > This will only work on [rooted goggles](https://github.com/fpv-wtf/margerine)
 
 ## Installation
-Use `adb` to copy everything in place:
+Use `adb` to copy everything in place and make it executable on the goggles:
 
 ```
 adb push draw.sh /blackbox
 adb push example.sh /blackbox
+adb shell
+chmod a+x /blackbox/draw.sh
+chmod a+x /blackbox/example.sh
 ```
 
 ## Usage
