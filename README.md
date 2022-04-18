@@ -1,6 +1,6 @@
 # Draw Symbols on the DJI FPV HD goggles LED matrix
 
-> This will only work on rooted [goggles](https://github.com/fpv-wtf/margerine)
+> This will only work on [rooted goggles](https://github.com/fpv-wtf/margerine)
 
 ## Installation
 Use `adb` to copy everything in place:
