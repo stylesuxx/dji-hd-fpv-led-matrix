@@ -10,6 +10,7 @@ adb push draw.sh /blackbox
 adb push example.sh /blackbox
 adb shell
 chmod a+x /blackbox/draw.sh
+chmod a+x /blackbox/draw_string.sh
 chmod a+x /blackbox/example.sh
 ```
 
@@ -22,8 +23,17 @@ To draw a symbol to the LED Matrix invoke from the `blackbox` directory like so:
 
 > Have a look at the example script to see how to chain multiple draw operations.
 
+
 To see all possible options run:
 
 ```
 ./draw.sh -h
 ```
+
+To draw a string to the LED Matrix invoke from the `blackbox` directory like so:
+
+```
+./draw_string.sh "BOOBS" 0.75
+```
+
+The second parameter is how long each character should be shown in seconds.

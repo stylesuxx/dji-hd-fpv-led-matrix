@@ -324,8 +324,9 @@ fi
 
 if [ $(echo $SYMBOL | grep -E "[0-9ABCDEFHIJKLOPRSUZ]") ]
 then
-	FUNC="draw_$SYMBOL"
 	clear
+
+	FUNC="draw_$SYMBOL"
 	$FUNC
 else
 	show_usage
