@@ -17,4 +17,10 @@ To draw a symbol to the LED Matrix invoke from the `blackbox` directory like so:
 ./draw.sh A
 ```
 
-Have a look at the example script to see how to chain multiple draw operations.
+> Have a look at the example script to see how to chain multiple draw operations.
+
+To see all possible options run:
+
+```
+./draw.sh -h
+```
