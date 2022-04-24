@@ -1,0 +1,6 @@
+Package: goggle-led-draw
+Version: 0.1.0
+Maintainer: Chris L. <stylesuxx@gmail.com>
+Description: Draw on the DJI goggle LED display
+Architecture: armv7-3.2
+Depends:

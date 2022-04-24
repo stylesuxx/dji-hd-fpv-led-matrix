@@ -1,5 +1,5 @@
 #!/system/bin/sh
-draw="/blackbox/draw.sh"
+draw="/opt/bin/led-draw-char"
 
 show_usage() {
   echo "Usage: $0 STRING WAIT"
@@ -22,8 +22,11 @@ WAIT=$2
 
 while read -n 1 char
 do
-  $draw $char
-  sleep $WAIT
-done <<< "$STRING"
+  if [ "$char" != "" ]
+  then
+    $draw $char
+    sleep $WAIT
+  fi
+done <<< $STRING
 
 $draw CLEAR
