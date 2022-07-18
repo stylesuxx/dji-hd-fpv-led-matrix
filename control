@@ -1,6 +1,7 @@
 Package: goggle-led-draw
-Version: 0.1.0
+Version: 0.2.0
 Maintainer: Chris L. <stylesuxx@gmail.com>
 Description: Draw on the DJI goggle LED display
 Architecture: armv7-3.2
+Homepage: https://github.com/stylesuxx/dji-hd-fpv-led-matrix
 Depends:
